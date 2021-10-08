@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-typedef short TypeEntier;
+typedef unsigned long long TypeEntier;
 
 TypeEntier factorielle(TypeEntier n){
     int produit = 1;
@@ -8,6 +8,12 @@ TypeEntier factorielle(TypeEntier n){
         produit = produit*(n-k);
     }
     return produit;
+}
+
+void calculfactoriel(int nb) {
+    for (int u; u<=nb; u++) {
+        printf("%d! = %lld\n", u, factorielle(u));
+    }
 }
 
 void afficheFactorielle(void) {
