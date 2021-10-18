@@ -64,7 +64,7 @@ int annee;
 
 initialiseDate(Date * d) {
     int jourdonne, annee;
-    scanf("%i", jourdonne);
+    scanf("%i", &jourdonne);
     *d.jour = jourdonne;
     scanf
     scanf("")
